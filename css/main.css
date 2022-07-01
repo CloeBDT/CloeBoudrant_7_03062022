@@ -11299,7 +11299,7 @@ textarea.form-control-lg {
 }
 
 body {
-  margin: 0 100px 0 100px;
+  margin: 0 6.25rem 3.125rem 6.25rem;
 }
 
 .menu-cote {
@@ -11519,10 +11519,10 @@ ul {
 .navigation {
   display: flex;
   align-items: center;
-  height: 69px;
+  height: 4.313rem;
   background: #E7E7E7;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
   cursor: pointer;
 }
 .navigation__text {
@@ -11532,14 +11532,14 @@ ul {
   border-radius: 5px;
   background: #E7E7E7;
   cursor: pointer;
-  padding-left: 15px;
+  padding-left: 0.938rem;
 }
 .navigation i {
   display: flex;
   justify-content: flex-end;
   width: 7%;
-  font-size: 32px;
-  padding-right: 15px;
+  font-size: 2rem;
+  padding-right: 0.938rem;
 }
 
 .section-articles {
@@ -11547,39 +11547,38 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: inherit;
-  grid-row-gap: 50px;
-  grid-column-gap: 40px;
+  grid-row-gap: 3.125rem;
+  grid-column-gap: 2.5rem;
 }
 
 article {
-  width: 380px;
-  height: 364px;
+  height: 22.75rem;
   background: #E7E7E7;
   border-radius: 5px;
 }
 article .img {
-  height: 178px;
+  height: 11.125rem;
   background: #C7BEBE;
   border-radius: 5px 5px 0 0;
 }
 article .recette {
-  height: 186px;
+  height: 11.625rem;
 }
 article .recette__titre {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 10px 20px;
+  padding: 1.25rem 1.25rem 0.625rem 1.25rem;
   height: 30%;
 }
 article .recette__instr {
   display: flex;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 1.25rem 1.25rem 1.25rem;
   height: 70%;
 }
 article h2, article .h2 {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   font-family: "Lato", sans-serif;
 }
@@ -11587,15 +11586,15 @@ article .temps {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 article .temps p {
-  margin-left: 5px;
+  margin-left: 0.313rem;
   margin-bottom: 0;
 }
 article .composition {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   width: 50%;
   height: 100%;
@@ -11604,7 +11603,7 @@ article .composition p {
   margin: 0;
 }
 article .instruction {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   width: 50%;
   height: 100%;

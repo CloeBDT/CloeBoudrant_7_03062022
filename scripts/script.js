@@ -25,7 +25,7 @@ function displayRecipes(recettes) {
     });
 }
 
-var recettes = recipes;
+const recettes = recipes;
 
 class getRecipes {
     constructor(data) {

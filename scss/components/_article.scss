@@ -3,36 +3,35 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: inherit;
-    grid-row-gap: 50px;
-    grid-column-gap: 40px;
+    grid-row-gap: 3.125rem;
+    grid-column-gap: 2.5rem;
 }
 
 
 article {
-    width: 380px;
-    height: 364px;
+    height: 22.75rem;
     background: #E7E7E7;
     border-radius: 5px;
 
     .img {
-        height: 178px;
+        height: 11.125rem;
         background: #C7BEBE;
         border-radius: 5px 5px 0 0;
     }
 
     .recette {
-        height: 186px;
+        height: 11.625rem;
 
         &__titre {
             display: flex;
             justify-content: space-between;
-            padding: 20px 20px 10px 20px;
+            padding: 1.25rem 1.25rem 0.625rem 1.25rem;
             height: 30%;
         }
 
         &__instr {
             display: flex;
-            padding: 0px 20px 20px 20px;
+            padding: 0px 1.25rem 1.25rem 1.25rem;
             height: 70%;
         }
     }
@@ -40,7 +39,7 @@ article {
     h2 {
         display: flex;
         align-items: center;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
         font-family: 'Lato', sans-serif;
     }
@@ -49,17 +48,17 @@ article {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 700;
 
         p {
-            margin-left: 5px;
+            margin-left: 0.313rem;
             margin-bottom: 0;
         }
     }
 
     .composition {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
         width: 50%;
         height: 100%;
@@ -70,7 +69,7 @@ article {
     }
 
     .instruction {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
         width: 50%;
         height: 100%;
