@@ -1,0 +1,90 @@
+.section-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: inherit;
+    grid-row-gap: 50px;
+    grid-column-gap: 40px;
+}
+
+
+article {
+    width: 380px;
+    height: 364px;
+    background: #E7E7E7;
+    border-radius: 5px;
+
+    .img {
+        height: 178px;
+        background: #C7BEBE;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .recette {
+        height: 186px;
+
+        &__titre {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px 10px 20px;
+            height: 30%;
+        }
+
+        &__instr {
+            display: flex;
+            padding: 0px 20px 20px 20px;
+            height: 70%;
+        }
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .temps {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+
+        p {
+            margin-left: 5px;
+            margin-bottom: 0;
+        }
+    }
+
+    .composition {
+        font-size: 12px;
+        font-weight: 700;
+        width: 50%;
+        height: 100%;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .instruction {
+        font-size: 12px;
+        font-weight: 400;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+
+        p {
+            height: 100%;
+            margin-bottom: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    }
+}

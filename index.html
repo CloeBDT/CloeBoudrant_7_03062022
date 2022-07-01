@@ -5,81 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0239f6809f.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
 
     <title>Les Petits Plats</title>
 </head>
 <body>
-
     <header>
-        <div class="logo">
-            <img src="assets/logo.svg" alt="logo du site Les Petits Plats">
-            <h1>Les petits plats</h1>
+        <div class="container mt-5 mb-3">
+            <img class="mx-auto d-block" src="assets/logo.svg" alt="logo du site Les Petits Plats">
+            <h1 class="text-center text-primary">Les petits plats</h1>
         </div>
-
-        <form class="form-search">
-            <div class="search-principal">
-                <input id="search" type="text" placeholder="Rechercher une recette, un ingrédient ou une description"/>
-                <i class="fas fa-search"></i>
-            </div>
-        </form>
     </header>
     
     <main>
-        <section class="mot_cle">
-            <ul class="mot_cle_tag"></ul>
+        <section>
+            <nav class="navigation">
+                <input class="navigation__text" type="search" placeholder="Rechercher une recette">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </nav>
+
+            <div class="selection">
+                <ul class="tag"></ul>
+            </div>
+
+            <div class="btn">
+                <div class="btn__categorie">
+                    <div class="select-ingredient select">
+                        <div class="select__btn ingredient">
+                            <div>
+                                <label for="search"></label>
+                                <input id="search" class="btn-text" placeholder="Ingredients"/>
+                            </div>
+                            <i class="fa-solid fa-chevron-down arrow-ingredient"></i>
+                        </div>
+
+                        <ul class="options option-ingredient">
+                            <li class="options__list">
+                                <span class="option-text">Lait de coco</span>
+                            </li>
+                            <li class="options__list">
+                                <span class="option-text">Sucre</span>
+                            </li>
+                            <li class="options__list">
+                                <span class="option-text">Concombre</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn__categorie">
+                    <div class="select-appareil select">
+                        <div class="select__btn appareil">
+                            <div>
+                                <label for="search2"></label>
+                                <input id="search2" class="btn-text" placeholder="Appareils"/>
+                            </div>
+                            <i class="fa-solid fa-chevron-down arrow-appareil"></i>
+                        </div>
+
+                        <ul class="options option-appareil">
+                            <li class="options__list">
+                                <span class="option-text">Lait de coco</span>
+                            </li>
+                            <li class="options__list">
+                                <span class="option-text">Sucre</span>
+                            </li>
+                            <li class="options__list">
+                                <span class="option-text">Concombre</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn__categorie">
+                    <div class="select-ustensile select">
+                        <div class="select__btn ustensile">
+                            <div>
+                                <label for="search3"></label>
+                                <input id="search3" class="btn-text" placeholder="Ustensiles"/>
+                            </div>
+                            <i class="fa-solid fa-chevron-down arrow-ustensile"></i>
+                        </div>
+
+                        <ul class="options option-ustensile">
+                            <li class="options__list">
+                                <span class="option-text">Lait de coco</span>
+                            </li>
+                            <li class="options__list">
+                                <span class="option-text">Sucre</span>
+                            </li>
+                            <li class="options__list">
+                                <span class="option-text">Concombre</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
         </section>
 
-        <section class="search-secondary">
-            <div class="global_ingredients">
-                <div class="global_ingredients_button">
-                    <h2>Ingredients</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="global_ingredients_list">
-                    <div class="close-ingredients">
-                        <input id="input-ingredients" type="text" placeholder ="Rechercher un ingrédient">                       
-                        <i class="fas fa-chevron-up"></i> 
-                    </div>
-                    <div id="ingredients"></div>
-                </div>
-            </div>
-
-            <div class="global_appareils">
-                <div class="global_appareils_button">
-                    <h2>Appareils</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="global_appareils_list">
-                    <div class="close-appareils">
-                        <input id="input-appareils" type="text" placeholder ="Rechercher un appareil">                       
-                        <i class="fas fa-chevron-up"></i> 
-                    </div>
-                    <div id="appareils"></div>
-                </div>
-            </div>
-
-            <div class="global_ustensiles">
-                <div class="global_ustensiles_button">
-                    <h2>Ustensiles</h2>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="global_ustensiles_list">
-                    <div class="close-ustensiles">
-                        <input id="input-ustensiles" type="text"  placeholder ="Rechercher un ustensile">                       
-                        <i class="fas fa-chevron-up"></i> 
-                    </div>
-                    <div id="ustensiles"></div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="recettes"></section>
+        <section class="section-articles"></section>
+        
     </main>
 
     <!--SCRIPT-->
-    <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+    <script src="scripts/recipes.js"></script>
+    <script src="scripts/script.js"></script>
+    
 </body>
 </html>

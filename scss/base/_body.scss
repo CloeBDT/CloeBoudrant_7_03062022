@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+body {
+    margin: 0 100px 0 100px
+}
+
+.menu-cote {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+

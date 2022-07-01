@@ -1,0 +1,174 @@
+.tag {
+    display: flex;
+    
+    &__option {
+        display: flex;
+        width: fit-content;
+        padding: 0 1rem;
+        height: 37px;
+        border-radius: 5px;
+        color: white;
+        background: $couleur-secondaire;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-right: 15px;
+
+        i {
+            margin-left: 10px;
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+
+    &__categorie {
+        margin-right: 15px;
+    }
+}
+
+.select {
+    width: 170px;
+    color: white;
+
+    li {
+        list-style-type: none;
+        text-align: start
+    }
+    
+    .ingredient {
+        @include btn;
+        background: $couleur-secondaire;
+
+        input {
+            border: none;
+            background: $couleur-secondaire;
+            color: white;
+            width: 100px;
+        }
+
+        #search::placeholder {
+            color: white;
+            font-weight: 700;
+        }
+
+        i {
+            font-size: 16px;
+            transition: 0.3s;
+        } 
+    }
+
+    .option-ingredient {
+        position: relative;
+        padding: 0 20px 20px 20px;
+        background: $couleur-secondaire;
+        border-radius: 0px 0px 5px 5px;
+        margin-top: -5px;
+        display: none;
+
+        &__list {
+            display: flex;
+            height: auto;
+            padding: 5px 0px;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    .appareil {
+        @include btn;
+        background: $couleur-tertiaire;
+
+        input {
+            border: none;
+            background: $couleur-tertiaire;
+            color: white;
+            width: 100px;
+        }
+
+        #search2::placeholder {
+            color: white;
+            font-weight: 700;
+        }
+
+        i {
+            font-size: 16px;
+            transition: 0.3s;
+        } 
+    }
+
+    .option-appareil {
+        position: relative;
+        padding: 0 20px 20px 20px;
+        background: $couleur-tertiaire;
+        border-radius: 0px 0px 5px 5px;
+        margin-top: -5px;
+        display: none;
+
+        &__list {
+            display: flex;
+            height: auto;
+            padding: 5px 0px;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    .ustensile {
+        @include btn;
+        background: $couleur-quaternaire;
+
+        input {
+            border: none;
+            background: $couleur-quaternaire;
+            color: white;
+            width: 100px;
+        }
+
+        #search3::placeholder {
+            color: white;
+            font-weight: 700;
+        }
+
+        i {
+            font-size: 16px;
+            transition: 0.3s;
+        } 
+    }
+
+    .option-ustensile {
+        position: relative;
+        padding: 0 20px 20px 20px;
+        background: $couleur-quaternaire;
+        border-radius: 0px 0px 5px 5px;
+        margin-top: -5px;
+        display: none;
+
+        &__list {
+            display: flex;
+            height: auto;
+            padding: 5px 0px;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    &.active {
+        width: 667px;
+        .options {
+            display: block; 
+        }
+
+        .select__btn i {
+            transform: rotate(-180deg);
+        }
+    }
+}
+

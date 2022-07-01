@@ -20,7 +20,7 @@ const recipes = [
             },
             {
                 "ingredient" : "Sucre",
-                "quantite" : 30,
+                "quantity" : 30,
                 "unit" : "grammes"
             },
             {
@@ -52,7 +52,7 @@ const recipes = [
             },
             {
                 "ingredient" : "Carotte",
-                "quantite" : 1
+                "quantity" : 1
             },
             {
                 "ingredient" : "Citron Vert",
@@ -68,7 +68,8 @@ const recipes = [
         "description": "Découper le thon en dés, mettre dans un plat et recouvrir de jus de citron vert (mieux vaut prendre un plat large et peu profond). Laisser reposer au réfrigérateur au moins 2 heures. (Si possible faites-le le soir pour le lendemain. Après avoir laissé mariner le poisson, coupez le concombre en fines rondelles sans la peau et les tomates en prenant soin de retirer les pépins. Rayer la carotte. Ajouter les légumes au poissons avec le citron cette fois ci dans un Saladier. Ajouter le lait de coco. Pour ajouter un peu plus de saveur vous pouver ajouter 1 à 2 cuillères à soupe de Crème de coco",
         "appliance": "Saladier",
         "ustensils": ["presse citron"]
-    },{
+    },
+    {
         "id": 3,
         "name": "Poulet coco réunionnais",
         "servings": 4,
@@ -96,7 +97,7 @@ const recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'olive",
                 "quantity": 1,
                "unit": "cuillères à soupe"
             }
@@ -174,7 +175,7 @@ const recipes = [
            {
                 "ingredient": "Moutarde de Dijon",
                 "quantity": 1,
-                "unite": "cuillères à soupe"
+                "unit": "cuillères à soupe"
            }
         ],
         "time": 45,
@@ -451,12 +452,12 @@ const recipes = [
             {
                 "ingredient": "Vinaigre de cidre",
                 "quantity": 1,
-                "unit":"cuillère à soupe"
+                "unit":"cuillères à soupe"
             },
             {
                 "ingredient": "huile d'olive",
                 "quantity": 2,
-                "unit": "cuillère à soupe"
+                "unit": "cuillères à soupe"
             }
         ],
         "time":40,
@@ -571,7 +572,7 @@ const recipes = [
             {
                 "ingredient": "huile d'olives",
                 "quantity": 2,
-                "unit": "cuillère à soupe"
+                "unit": "cuillères à soupe"
             }
         ],
         "time": 45,
@@ -941,7 +942,7 @@ const recipes = [
             {
                 "ingredient": "Crème fraîche",
                 "quantity": 4,
-                "unit": "cuillère à soupe"
+                "unit": "cuillères à soupe"
             },
             {
                 "ingredient": "Vermicelles",
